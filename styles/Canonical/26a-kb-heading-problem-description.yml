@@ -1,0 +1,8 @@
+extends: occurrence
+message: "Problem description heading does not occur exactly once"
+ignorecase: true
+scope: raw
+level: error
+min: 1
+max: 1
+token: "problem description</h[1-9]>"

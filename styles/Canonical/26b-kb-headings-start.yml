@@ -1,0 +1,11 @@
+extends: existence
+message: "Heading '%s' must start with Heading 1"
+nonword: false
+scope: heading & ~heading.h1
+ignorecase: true
+level: error
+tokens:
+  - table of contents
+  - problem description
+  - solution
+  - related documents

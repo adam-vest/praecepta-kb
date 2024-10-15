@@ -1,0 +1,21 @@
+extends: existence
+message: "Try to avoid directed words such as '%s'"
+nonword: false
+scope: ~heading.h1
+ignorecase: true
+level: warning
+tokens:
+  - I
+  - I'll
+  - me
+  - my
+  - mine
+  - you
+  - you'll
+  - your
+  - yours
+  - us
+  - let's
+  - lets
+  - we
+  - we'll
