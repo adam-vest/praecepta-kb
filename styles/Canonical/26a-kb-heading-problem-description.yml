@@ -5,4 +5,4 @@ scope: raw
 level: error
 min: 1
 max: 1
-token: "^#+? problem description"
+token: "#+? problem description"
