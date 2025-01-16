@@ -1,4 +1,4 @@
-# Canonical documentation style guide
+# KB documentation style guide
 
 This repository contains the documentation and the Vale rules for the documentation and KB style guides.
 
@@ -6,7 +6,7 @@ The global style guide itself is written in Markdown and contained in the `en` d
 
 It is published online at: [docs.ubuntu.com/styleguide/en](https://docs.ubuntu.com/styleguide/en)
 
-The KB Style Guide can be found []
+The KB Style Guide can be found [here](https://canonical.lightning.force.com/lightning/r/Knowledge__kav/ka4N10000000Ee5IAE/view)
 
 ## The Vale rules
 
@@ -92,6 +92,8 @@ There are times when it is useful to be able to manually run Vale from a termina
 1. **Clone the repository**
    ```
    git clone https://github.com/adam-vest/praecepta-kb.git
+   cd praecepta-kb
+   git checkout kb-template
    ```
 2. **Set environment variables**
    ```
