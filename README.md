@@ -1,15 +1,17 @@
 # Canonical documentation style guide
 
-This repository contains the documentation and the Vale rules for the documentation style guide.
+This repository contains the documentation and the Vale rules for the documentation and KB style guides.
 
-The style guide itself is written in Markdown and contained in the `en` directory.
+The global style guide itself is written in Markdown and contained in the `en` directory.
 
 It is published online at: [docs.ubuntu.com/styleguide/en](https://docs.ubuntu.com/styleguide/en)
+
+The KB Style Guide can be found []
 
 ## The Vale rules
 
 The Vale linter operates from a series of rules. These are defined in individual YAML files, grouped into 'Styles'.
-This repository contains the Canonical set of rules, or the Canonical Style. 
+This repository contains the Canonical set of rules, or the Canonical Style, in addition to the KB Style Guide rules.
 
 ### Manual check
 
@@ -23,14 +25,14 @@ To manually check your documentation with Vale rules use the following steps:
 3. Run Vale with the configuration file `vale.ini` from this repository for testing your documentation source files: 
   
     ```shell
-    vale --config ~/praecepta/vale.ini ~/product/docs/
+    vale --config ~/praecepta-kb/vale.ini ~/product/docs/
     ```
 
 For automation, see the [Canonical Style GitHub action](#the-canonical-style-github-action).
 
 ### Adding to the rules
 
-Anyone is welcome to submit a PR to add additional rules. However, no additions will be considered unless they are part of the Canonical Style Guide as found at the website above.
+Anyone is welcome to submit a PR to add additional KB-specific rules. However, no additions will be considered unless they are part of the KB Style Guide as found at the website above.
 
 For a reference on rule syntax, see the Vale [documentation on Styles][Vale styles].
 
@@ -89,12 +91,12 @@ There are times when it is useful to be able to manually run Vale from a termina
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/canonical/praecepta.git
+   git clone https://github.com/adam-vest/praecepta-kb.git
    ```
 2. **Set environment variables**
    ```
-   export VALE_CONFIG_PATH=~/praecepta/.vale.ini
-   export VALE_STYLES_PATH=~/praecepta/styles
+   export VALE_CONFIG_PATH=~/praecepta-kb/.vale.ini
+   export VALE_STYLES_PATH=~/praecepta-kb/styles
    ```
    Note: this assumes you cloned the repo directly to your home directory - adjust these paths if necessary.
 3. **Confirm configuration**
